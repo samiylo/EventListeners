@@ -39,7 +39,19 @@
     document.body.append(dot)
     })
 
-    
+    // ==================================================== Key Up / Key Down
+    window.addEventListener('keydown', function(e){
+            // console.log(e)
+            if(e.key == "s" || e.key == "S"){
+                document.body.style.backgroundColor = "orange";
+            }
+        })
+        window.addEventListener('keyup', function(e){
+            // console.log(e)
+            if(e.key == "s" || e.key == "S"){
+                document.body.style.backgroundColor = "";
+            }
+        })
 
 
     </script>
