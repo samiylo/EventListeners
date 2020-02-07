@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    .dot {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: aqua;
+        position: absolute;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    
+    <div style="top: 5px; left: 50px;">
+
+    </div>
+    <script>
+    
+
+    window.addEventListener('click', function(event) {
+        // console.log(event)
+    
+        let dot = document.createElement('div');
+
+    dot.className = 'dot';
+
+    dot.style.left = (event.pageX - 4).toString() + 'px';
+    dot.style.top = (event.pageY - 4).toString() + 'px'
+
+    document.body.append(dot)
+    })
+
+    
+
+
+    </script>
+    
+
+</body>
+</html>

@@ -21,7 +21,43 @@
   
   <script>
 
+    let ul = document.querySelector('ul');
+
+    ul.addEventListener('click', function(event) {
+console.log(event.target.id)
     
+
+    switch (event.target.id) {
+      
+      case 'pink': console.log("Pink was clicked");
+      break;
+
+      case 'yellow': console.log("Yellow was clicked")
+      break;
+
+      case 'orange': console.log('Orange was clicked')
+      break;
+
+      case 'purple': console.log('Purple was clicked')
+      break;
+
+      case 'blue' : console.log ('Blue was clicked')
+      break;
+
+      case 'green' : console.log ('Green was clicked')
+      break;
+
+      case 'ygreen' : console.log ("YGreen was clicked")
+      break;
+
+      case 'gray' : console.log ('Grey was clicked')
+      break;
+
+      case 'red' : console.log ('Red was clicked')
+      break;
+    }
+    })
+
   </script>
 
 </body>
